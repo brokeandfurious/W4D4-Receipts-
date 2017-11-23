@@ -14,6 +14,10 @@
 		9D0FA8071FC73B2E00C080AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0FA8061FC73B2E00C080AA /* Assets.xcassets */; };
 		9D0FA80A1FC73B2E00C080AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0FA8081FC73B2E00C080AA /* LaunchScreen.storyboard */; };
 		9D0FA80D1FC73B2E00C080AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FA80C1FC73B2E00C080AA /* main.m */; };
+		9D0FA8211FC7489000C080AA /* ReceiptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FA8201FC7489000C080AA /* ReceiptCell.m */; };
+		9D0FA8241FC74A0600C080AA /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FA8231FC74A0600C080AA /* AddViewController.m */; };
+		9D0FA8271FC7773700C080AA /* TagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FA8261FC7773700C080AA /* TagCell.m */; };
+		9D0FA82A1FC77FD200C080AA /* DataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FA8291FC77FD200C080AA /* DataHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,14 @@
 		9D0FA8091FC73B2E00C080AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D0FA80B1FC73B2E00C080AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D0FA80C1FC73B2E00C080AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D0FA81F1FC7489000C080AA /* ReceiptCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReceiptCell.h; sourceTree = "<group>"; };
+		9D0FA8201FC7489000C080AA /* ReceiptCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReceiptCell.m; sourceTree = "<group>"; };
+		9D0FA8221FC74A0600C080AA /* AddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		9D0FA8231FC74A0600C080AA /* AddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		9D0FA8251FC7773700C080AA /* TagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagCell.h; sourceTree = "<group>"; };
+		9D0FA8261FC7773700C080AA /* TagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagCell.m; sourceTree = "<group>"; };
+		9D0FA8281FC77FD200C080AA /* DataHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataHandler.h; sourceTree = "<group>"; };
+		9D0FA8291FC77FD200C080AA /* DataHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +76,20 @@
 				9D0FA7FB1FC73B2E00C080AA /* AppDelegate.m */,
 				9D0FA7FD1FC73B2E00C080AA /* ViewController.h */,
 				9D0FA7FE1FC73B2E00C080AA /* ViewController.m */,
+				9D0FA81F1FC7489000C080AA /* ReceiptCell.h */,
+				9D0FA8201FC7489000C080AA /* ReceiptCell.m */,
+				9D0FA8221FC74A0600C080AA /* AddViewController.h */,
+				9D0FA8231FC74A0600C080AA /* AddViewController.m */,
+				9D0FA8251FC7773700C080AA /* TagCell.h */,
+				9D0FA8261FC7773700C080AA /* TagCell.m */,
 				9D0FA8001FC73B2E00C080AA /* Main.storyboard */,
 				9D0FA8061FC73B2E00C080AA /* Assets.xcassets */,
 				9D0FA8081FC73B2E00C080AA /* LaunchScreen.storyboard */,
 				9D0FA80B1FC73B2E00C080AA /* Info.plist */,
 				9D0FA80C1FC73B2E00C080AA /* main.m */,
 				9D0FA8031FC73B2E00C080AA /* W4D4__Receipts__.xcdatamodeld */,
+				9D0FA8281FC77FD200C080AA /* DataHandler.h */,
+				9D0FA8291FC77FD200C080AA /* DataHandler.m */,
 			);
 			path = "W4D4- Receipts++";
 			sourceTree = "<group>";
@@ -145,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0FA82A1FC77FD200C080AA /* DataHandler.m in Sources */,
+				9D0FA8271FC7773700C080AA /* TagCell.m in Sources */,
+				9D0FA8241FC74A0600C080AA /* AddViewController.m in Sources */,
 				9D0FA7FF1FC73B2E00C080AA /* ViewController.m in Sources */,
 				9D0FA8051FC73B2E00C080AA /* W4D4__Receipts__.xcdatamodeld in Sources */,
+				9D0FA8211FC7489000C080AA /* ReceiptCell.m in Sources */,
 				9D0FA80D1FC73B2E00C080AA /* main.m in Sources */,
 				9D0FA7FC1FC73B2E00C080AA /* AppDelegate.m in Sources */,
 			);

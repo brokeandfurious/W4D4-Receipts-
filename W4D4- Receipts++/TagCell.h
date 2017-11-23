@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TagCell.h
 //  W4D4- Receipts++
 //
 //  Created by Murat Ekrem Kolcalar on 11/23/17.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TagCell : UITableViewCell
 
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (weak, nonatomic) IBOutlet UILabel *labelForTags;
 
 @end
-
