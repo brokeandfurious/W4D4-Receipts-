@@ -54,6 +54,11 @@
     }
     
     self.setForSelectedTags = [[NSMutableSet alloc]init];
+    //TODO: hack, adding first tag to all receipts for now.
+    if (self.tagsArray.firstObject) {
+        [self.setForSelectedTags addObject:self.tagsArray.firstObject];
+    }
+    
 }
 
 - (IBAction)doneButton:(UIButton *)sender {
@@ -69,7 +74,6 @@
     NSNumberFormatter *numFormatter = [[NSNumberFormatter alloc] init];
     numFormatter.numberStyle = NSNumberFormatterDecimalStyle;
     NSNumber *receiptNumber = [numFormatter numberFromString:self.amountTextField.text];
-    
     
     newReceipt.amount = [receiptNumber floatValue];
     newReceipt.note = self.noteTextField.text;
@@ -93,8 +97,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TagCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tagCell" forIndexPath:indexPath];
     Tag *tag = self.tagsArray[indexPath.row];
-    cell.labelForTags.text = @"shitt";
-//    cell.textLabel.text = tag.tagName;
+    cell.textLabel.text = tag.tagName;
     return cell;
 }
 

@@ -105,12 +105,12 @@
 
 #pragma TableView Stuff
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.receiptsArray.count; //also try adding receiptsArray here later for sorting n stuff?
+    return self.tagsArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.receiptsArray[section] count];
-//    return 5;
+    Tag *tag = self.tagsArray[section];
+    return tag.receipts.count;//[self.receiptsArray[section] count];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -121,16 +121,11 @@
 
 - (ReceiptCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
-    
     ReceiptCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     Receipt *receipt = self.receiptsArray[indexPath.section][indexPath.row];
-    cell.noteLabel.text = @"FUUUUUUUUCK";
-    NSLog(@"%@", receipt.note);
-//    cell.amountLabel.text = @"fuck";
     
-//    cell.noteLabel.text = receipt.note;
-//    cell.amountLabel.text = [NSString stringWithFormat:@"$%f", receipt.amount];
+    cell.noteLabel.text = receipt.note;
+    cell.amountLabel.text = [NSString stringWithFormat:@"%f", receipt.amount];
     
     return cell;
 }
